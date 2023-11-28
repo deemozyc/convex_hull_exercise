@@ -24,14 +24,14 @@ void Jarvis::do_jarvis()
     // upper hull
     while (1)
     {
-        double min_angle = inf;
+        long double min_angle = inf;
         int min_index = -1;
         point inf_point = {st[top - 1].x, inf};
         for (int i = 0; i < n; i++)
         {
             if (dis(p[i], st[top - 1]) < eps) // avoid same point
                 continue;
-            double this_angle = clockwise_angle(st[top - 1], inf_point, p[i]);
+            long double this_angle = clockwise_angle(st[top - 1], inf_point, p[i]);
             if (this_angle < -eps || this_angle > pi - eps)
                 // avoid many point in the most right/left line
                 continue;
@@ -48,14 +48,14 @@ void Jarvis::do_jarvis()
     // lower hull
     while (1)
     {
-        double min_angle = inf;
+        long double min_angle = inf;
         int min_index = -1;
         point inf_point = {st[top - 1].x, -inf};
         for (int i = 0; i < n; i++)
         {
             if (dis(p[i], st[top - 1]) < eps) // avoid same point
                 continue;
-            double this_angle = clockwise_angle(st[top - 1], inf_point, p[i]);
+            long double this_angle = clockwise_angle(st[top - 1], inf_point, p[i]);
             if (this_angle < -eps || this_angle > pi - eps)
                 // avoid many point in the most right/left line
                 continue;

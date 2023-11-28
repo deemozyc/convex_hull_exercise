@@ -5,16 +5,8 @@
 
 using namespace std;
 
-double one_d_linear(const vector<double> &a, const vector<double> &b, double c, int *flag);
+long double one_d_linear(const vector<long double> &a, const vector<long double> &b, long double c, int *flag, int *index);
 
-vector<double> init_v_by_c0(double c0, double c1);
-
-void shuffle_vectors(vector<double> &a, vector<double> &b, vector<double> &c);
-
-vector<double> two_d_linear(vector<double> &a, vector<double> &b, vector<double> &c,
-                            double c0, double c1, int *flag);
-
-vector<double> two_d_linear_point(const vector<point> &p, double c0, double c1, int *flag);
-void test_1d();
+vector<point> find_bridge(vector<point> &p, long double pivot, int *flag);
 
 #endif

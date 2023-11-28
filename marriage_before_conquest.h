@@ -13,7 +13,7 @@ public:
 
     Mbc(vector<point> &p);
 
-    void mbc_upper(const vector<point> &p);
+    void mbc_upper(vector<point> &p);
 
     vector<point> mbc_full();
 };

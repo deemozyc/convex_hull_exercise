@@ -2,4 +2,8 @@
 /float.cpp
 /obj
 /temp.py
-/text_files
+/text_files_cycle
+/text_files_parabolic
+/text_files_rect_false
+/text_files_rect_true
+/text_files_custom
